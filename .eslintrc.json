@@ -1,3 +1,25 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": [
+    "next/babel",
+    "next/core-web-vitals"
+  ],
+  "overrides": [
+    {
+      "files": [
+        "*.js"
+      ],
+      "rules": {
+        "quotes": "off",
+        "react-hooks/exhaustive-deps": "off",
+        "no-trailing-spaces": "off",
+        "semi": "off",
+        "comma-dangle": "off",
+        "eol-last": "off",
+        "curly": "off",
+        "react-native/no-inline-styles": "off",
+        "react/jsx-key": "off",
+        "react/no-unescaped-entities": "off"
+      }
+    }
+  ]
 }
